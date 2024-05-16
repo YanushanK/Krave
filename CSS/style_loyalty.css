@@ -1,0 +1,297 @@
+/* applied for all html elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --white: #fff;
+    --darkgray: #2c2c2c;
+    --lightgreen: rgb(5, 197, 5);
+    --darkgreen: rgb(5, 126, 5);
+    --black: #111;
+
+    --midgreen:#4CAF50;
+    --verylgreen: rgb(144,238,144);
+    --lightgray:#717375;
+    
+}
+/* header styling*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: var(--white);
+}
+/* header styling*/
+
+
+
+/*logo styling*/
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+/*logo styling*/
+
+
+
+/*Nav bar styling*/
+.nav-bar{
+    display: flex;
+    
+}
+
+.nav-bar a{
+    color: var(--darkgray);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+}
+
+.nav-bar a:hover{
+    color: var(--lightgreen);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: var(--darkgray);
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:var(--lightgreen);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--darkgray);
+    z-index: 10001;
+    cursor: pointer;
+}
+/*Nav bar styling*/
+
+/*section styling*/
+section{
+    padding: 5% 10%;
+
+}
+/*section styling*/
+
+
+/*main banner styling*/
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/main.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+}
+
+.main-text h1{
+    color: var(--darkgreen);
+    font-size: 65px;
+    text-transform:capitalize ;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+
+}
+.main-text p{
+    color: var(--darkgray);
+    font-size:  30px; 
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-button{
+    display: inline-block;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-button:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+}
+
+.main-button i{
+    vertical-align: middle;
+}
+
+/* down arror styling/sub section in main banner*/
+.down-arrow{
+    position:absolute;
+    top: 105%;
+    right: 87.5%;
+    
+
+}
+
+.down i{
+    font-size: 30px;
+    color: var(--darkgray);
+    border: 2px solid darkgray;
+    border-radius: 12px 12px;
+    padding: 12px 12px;
+
+}
+
+.down i:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+}
+/* down arror styling/sub section in main banner*/
+
+/* responsive styling*/
+ @media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+ }
+ @media(max-width:630px){
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+        
+    }
+    .main-text p {
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-button{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+ }
+
+ @media(max-width:750px){
+    .nav-bar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .nav-bar a{
+        display: block;
+        margin: 18px 0;
+    }
+    .nav-bar.open{
+        right: 0;
+    }
+ }
+
+
+ 
+ .loyalty-registration {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.loyalty-registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--midgreen);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--darkgreen);
+}
+
+.loyalty-benefits {
+    margin-top: 30px;
+}
+
+.loyalty-benefits h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scheme {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scheme h4 {
+    margin-bottom: 10px;
+}

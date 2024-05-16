@@ -1,0 +1,676 @@
+
+/* applied for all html elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --white: #fff;
+    --darkgray: #2c2c2c;
+    --lightgreen: rgb(5, 197, 5);
+    --darkgreen: rgb(5, 126, 5);
+    --black: #111;
+
+    --midgreen:#4CAF50;
+    --verylgreen: rgb(144,238,144);
+    --lightgray:#717375;
+    
+}
+/* header styling*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: var(--white);
+}
+/* header styling*/
+
+
+
+/*logo styling*/
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+/*logo styling*/
+
+
+
+/*Nav bar styling*/
+.nav-bar{
+    display: flex;
+    
+}
+
+.nav-bar a{
+    color: var(--darkgray);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+}
+
+.nav-bar a:hover{
+    color: var(--lightgreen);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: var(--darkgray);
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:var(--lightgreen);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--darkgray);
+    z-index: 10001;
+    cursor: pointer;
+}
+/*Nav bar styling*/
+
+/*section styling*/
+section{
+    padding: 5% 10%;
+
+}
+/*section styling*/
+
+
+/*main banner styling*/
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/main.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+}
+
+.main-text h1{
+    color: var(--darkgreen);
+    font-size: 65px;
+    text-transform:capitalize ;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+
+}
+.main-text p{
+    color: var(--darkgray);
+    font-size:  30px; 
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-button{
+    display: inline-block;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-button:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+}
+
+.main-button i{
+    vertical-align: middle;
+}
+
+/* down arror styling/sub section in main banner*/
+.down-arrow{
+    position:absolute;
+    top: 105%;
+    right: 87.5%;
+    
+
+}
+
+.down i{
+    font-size: 30px;
+    color: var(--darkgray);
+    border: 2px solid darkgray;
+    border-radius: 12px 12px;
+    padding: 12px 12px;
+
+}
+
+.down i:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+}
+/* down arror styling/sub section in main banner*/
+
+
+/* introduction section*/
+#introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: var(--white);
+    border: 10px solid darkgreen ;
+    padding: 20px;
+    
+
+}
+#introduction h1{
+    color: var(--darkgreen)  ;
+    font-size: 65px;
+    text-transform:capitalize ;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+#introduction p{
+    color: var(--darkgray);
+    font-size:  30px; 
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.features-list{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+   
+
+   
+}
+
+.features-list li{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.features-list li i{
+    margin-right: 5px;
+}
+/* introduction section*/
+
+/*products section*/
+
+/* dairy section styling*/
+.dairy{
+    padding: 50px;
+    background-color: var(--midgreen);
+    border: 15px solid lightgreen;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.center-text-1{
+    font-size: 35px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    color:var(--white);
+}
+    
+
+.row{
+    display: flex; 
+    align-items: center;
+}
+
+.dairy img{
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    
+}
+.dairy-product-text{
+    width: 50%;
+}
+
+
+.dairy-product-text h2{
+    font-size:  30px;
+    padding: 10px;
+}
+
+.dairy-product-text h3{
+    font-size:  20px;
+    padding: 10px;
+    color: var(--white);
+}
+
+
+.buy-now-button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 11px;
+    background-color:var(--white);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 5px;
+}
+ .buy-now-button:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+ }
+ /* dairy section styling*/
+
+ /* vege section styling*/
+
+ .vegetables{
+    padding: 50px;
+    background-color: var(--midgreen);
+    border: 15px solid lightgreen;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.center-text-2{
+    font-size: 35px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    color:var(--white);
+    display: flex;
+    justify-content: flex-start;
+      
+}
+    
+
+.row-2{
+    display: flex; 
+    align-items: center;
+    
+}
+
+.vegetables img{
+    width: 50%;
+    margin-left: auto;
+    border-radius: 10px;
+    
+}
+.vege-product-text{
+    width: 50%;
+}
+
+
+.vege-product-text h2{
+    font-size:  30px;
+    padding: 10px;
+  
+    margin-left: 20px;
+}
+
+.vege-product-text h3{
+    font-size:  20px;
+    padding: 10px;
+    color: var(--white);
+    
+    margin-left: 20px;
+}
+
+
+.buy-now-button-1{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 30px;
+    
+    background-color:var(--white);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 5px;
+}
+ .buy-now-button-1:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+ }
+ /* vege section styling*/
+
+  /* Cosmetics and skin care products styling*/
+
+.skin-care{
+    padding: 50px;
+    background-color: var(--midgreen);
+    border: 15px solid lightgreen;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.center-text-3{
+    font-size: 35px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.row-3{
+    display: flex; 
+    align-items: center;
+}
+
+.skincare img{
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    
+}
+.skincare-product-text{
+    width: 50%;
+}
+.skincare-product-text h2{
+    font-size:  30px;
+    padding: 10px;
+    margin-left: 20px;
+}
+.skincare-product-text h3{
+    font-size:  20px;
+    padding: 10px;
+    color: var(--white);
+    margin-left: 20px;
+}
+.buy-now-button-2{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 30px;
+    background-color:var(--white);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 5px;
+}
+ .buy-now-button-2:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+ }
+  /* Cosmetics and skin care products styling*/
+
+  /* javescript header styling*/
+header.sticky{
+    background-color: var(--white);
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%)
+}
+  /* javescript header styling*/
+
+  /* numbered list styling*/
+.what-we-offer {
+    text-align: center; 
+    padding: 50px 0; 
+    background: linear-gradient(to bottom left, #4CAF50 50%, lightgreen 50%);
+    margin-top: 20px;
+    
+
+}
+
+.what-we-offer h2 {
+    font-size:  40px;
+    padding: 10px;
+    color: var(--white);
+    margin-bottom: 20px; 
+    text-decoration: underline black;
+    text-underline-offset: 7px;
+  
+}
+
+.what-we-offer ol {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.what-we-offer li {
+    margin-bottom: 30px; 
+}
+
+.what-we-offer h3 {
+    font-size:  30px;
+    padding: 10px;
+    color: var(--white);
+    margin-bottom: 10px; 
+}
+
+.what-we-offer p {
+    font-size:  20px;
+    padding: 10px;
+    color: var(--black);
+    margin-bottom: 15px; 
+}
+
+
+  /* numbered list styling*/
+
+  /*footer*/
+ .contact{
+    background-color: lightgray;
+
+ }
+
+ .contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap:3rem ;
+ }
+
+ .first-info img{
+    width: 140px;
+    height: auto;
+
+ }
+
+ .contact-info h4{
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+
+ .contact-info p{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+ }
+
+ .contact-info p:hover{
+    color: var(--darkgreen);
+ }
+
+ .social-icon i{
+    color: var(--darkgray);
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+
+ }
+ .social-icon i:hover{
+    transform: scale(1.3);
+
+ }
+ footer{
+    background-color:var(--verylgreen);
+    text-align: center;
+    padding: 20px;
+ }
+
+ footer p{
+    color: var(--black);
+    text-transform: capitalize;
+ }
+
+ /* responsive styling*/
+ @media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+ }
+ @media(max-width:630px){
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+        
+    }
+    .main-text p {
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-button{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+ }
+
+ @media(max-width:750px){
+    .nav-bar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .nav-bar a{
+        display: block;
+        margin: 18px 0;
+    }
+    .nav-bar.open{
+        right: 0;
+    }
+ }
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+
+    /* Main banner */
+    .main-text h1 {
+        font-size: 24px; /* Example font size adjustment */
+    }
+
+    /* Brief introduction section */
+    #introduction {
+        padding: 20px; /* Example padding adjustment */
+    }
+    #introduction h1 {
+        font-size: 24px;
+        
+    }
+
+    .features-list {
+        font-size: 14px; /* Example font size adjustment */
+    }
+
+    /* Dairy products section */
+    .dairy .row {
+        flex-direction: column; /* Example layout adjustment */
+    }
+
+    /* Vegetables section */
+    .vegetables .row-2 {
+        flex-direction: column; /* Example layout adjustment */
+    }
+
+    /* Cosmetics and skin care products section */
+    .skin-care .row-3 {
+        flex-direction: column; /* Example layout adjustment */
+    }
+
+    /* What we offer section */
+    .what-we-offer li {
+        font-size: 14px; /* Example font size adjustment */
+    }
+}
+
+/* Media queries for laptop and larger devices */
+@media only screen and (min-width: 768px) {
+    /* Adjustments for laptops and larger screens */
+
+    /* Main banner */
+    .main-text h1 {
+        font-size: 32px; /* Example font size adjustment */
+    }
+
+    /* Brief introduction section */
+    #introduction {
+        padding: 30px; /* Example padding adjustment */
+    }
+
+    .features-list {
+        font-size: 16px; /* Example font size adjustment */
+    }
+
+    /* Dairy products section */
+    .dairy .row {
+        flex-direction: row; /* Example layout adjustment */
+    }
+
+    /* Vegetables section */
+    .vegetables .row-2 {
+        flex-direction: row; /* Example layout adjustment */
+    }
+
+    /* Cosmetics and skin care products section */
+    .skin-care .row-3 {
+        flex-direction: row; /* Example layout adjustment */
+    }
+
+    /* What we offer section */
+    .what-we-offer li {
+        font-size: 16px; /* Example font size adjustment */
+    }
+}
+
+
+
+ 
+
+
+
+
+

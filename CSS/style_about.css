@@ -1,0 +1,405 @@
+  /* About us page styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"Jost", sans-serif ;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --white: #fff;
+    --darkgray: #2c2c2c;
+    --lightgreen: rgb(5, 197, 5);
+    --darkgreen: rgb(5, 126, 5);
+    --black: #111;
+    --midgreen:#4CAF50;
+    --verylgreen: rgb(144,238,144);
+    --lightgray:#717375;
+    
+}
+
+  /* header styling*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: var(--white);
+}
+/* header styling*/
+
+
+
+/*logo styling*/
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+/*logo styling*/
+
+/*Nav bar styling*/
+.nav-bar{
+    display: flex;
+    
+}
+
+.nav-bar a{
+    color: var(--darkgray);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+}
+
+.nav-bar a:hover{
+    color: var(--lightgreen);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: var(--darkgray);
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:var(--lightgreen);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--darkgray);
+    z-index: 10001;
+    cursor: pointer;
+}
+/*Nav bar styling*/
+
+/*section styling*/
+section{
+    padding: 5% 5%;
+
+}
+/*section styling*/
+
+.main-about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/About_main.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+}
+
+.about-text h1{
+    color: var(--darkgreen);
+    font-size: 65px;
+    text-transform:capitalize ;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+   
+
+}
+.about-text p{
+    color: var(--darkgray);
+    font-size:  30px; 
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* down arror styling/sub section in main banner*/
+.down-arrow{
+    position:absolute;
+    top: 105%;
+    right: 87.5%;
+    
+
+}
+
+.down i{
+    font-size: 30px;
+    color: var(--darkgray);
+    border: 2px solid darkgray;
+    border-radius: 12px 12px;
+    padding: 12px 12px;
+
+}
+
+.down i:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+}
+
+/* down arror styling/sub section in main banner*/
+
+
+
+
+
+ /* spacer styling*/
+ .spacer {
+    height: 10px; 
+    background-color:var(--verylgreen); 
+    margin: 60px 0; 
+ }
+
+/* spacer styling*/
+
+
+/* ABOUT US STYLING*/ /* ABOUT US STYLING*/ /* ABOUT US STYLING*/ /* ABOUT US STYLING*/ /* ABOUT US STYLING*/
+
+/* Section Titles */
+.section-title h1 {
+    text-align: center;
+    color: var(--black);
+    margin: 20px 0;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+
+/* Content Styles */
+.content p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Locations Layout */
+.locations1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.locations2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.map1 iframe {
+    flex-basis: 45%;
+}
+
+.map2 iframe {
+    flex-basis: 45%;
+}
+
+
+.location-details1 {
+    flex-basis: 45%;
+    font-size: 20px;
+   
+}
+
+.location-details1 p{
+    font-size: 20px;
+    margin-top: 12px;
+    padding-left: 140px;
+}
+
+.location-details2 {
+    flex-basis: 45%;
+}
+
+.location-details2 p{
+    font-size: 20px;
+    margin-top: 12px;
+    padding-left: 110px;
+}
+
+.location-details1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.location-details2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+/* Services Table */
+/* Apply styles to the entire table */
+.services-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Style for table header */
+.services-table th {
+    background-color: var(--verylgreen);
+    color:var(--black);
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Style for table body */
+.services-table td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Style for table rows */
+.services-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for table footer */
+.services-table tfoot td {
+    background-color: var(--midgreen);
+    color:var(--white);
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+
+/*footer*/
+.contact{
+    background-color: lightgray;
+
+ }
+
+ .contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap:3rem ;
+ }
+
+ .first-info img{
+    width: 140px;
+    height: auto;
+
+ }
+
+ .contact-info h4{
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+
+ .contact-info p{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+ }
+
+ .contact-info p:hover{
+    color: var(--darkgreen);
+ }
+
+ .social-icon i{
+    color: var(--darkgray);
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+
+ }
+ .social-icon i:hover{
+    transform: scale(1.3);
+
+ }
+ footer{
+    background-color:var(--verylgreen);
+    text-align: center;
+    padding: 20px;
+ }
+
+ footer p{
+    color: var(--black);
+    text-transform: capitalize;
+ }
+
+
+ /* responsive styling*/
+ @media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+ }
+ @media(max-width:630px){
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+        
+    }
+    .main-text p {
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-button{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+ }
+
+ @media(max-width:750px){
+    .nav-bar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .nav-bar a{
+        display: block;
+        margin: 18px 0;
+    }
+    .nav-bar.open{
+        right: 0;
+    }
+ }
+
+ header.sticky{
+    background-color: var(--white);
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%)
+}

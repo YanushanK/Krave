@@ -1,0 +1,418 @@
+/* applied for all html elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"Jost", sans-serif ;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --white: #fff;
+    --darkgray: #2c2c2c;
+    --lightgreen: rgb(5, 197, 5);
+    --darkgreen: rgb(5, 126, 5);
+    --black: #111;
+
+    --midgreen:#4CAF50;
+    --verylgreen: rgb(144,238,144);
+    --lightgray:#717375;
+    
+}
+/* header styling*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: var(--white);
+}
+/* header styling*/
+
+
+
+/*logo styling*/
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+/*logo styling*/
+
+
+
+/*Nav bar styling*/
+.nav-bar{
+    display: flex;
+    
+}
+
+.nav-bar a{
+    color: var(--darkgray);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+}
+
+.nav-bar a:hover{
+    color: var(--lightgreen);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: var(--darkgray);
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:var(--lightgreen);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--darkgray);
+    z-index: 10001;
+    cursor: pointer;
+}
+/*Nav bar styling*/
+
+/*section styling*/
+section{
+    padding: 5% 10%;
+
+}
+/*section styling*/
+
+
+header.sticky{
+    background-color: var(--white);
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%)
+}
+
+/*main banner styling*/
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/vegetablespage.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+}
+
+.main-text h1{
+    color: var(--darkgreen);
+    font-size: 65px;
+    text-transform:capitalize ;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+
+}
+.main-text p{
+    color: var(--darkgray);
+    font-size:  30px; 
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-button{
+    display: inline-block;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-button:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+}
+
+.main-button i{
+    vertical-align: middle;
+}
+
+/* down arror styling/sub section in main banner*/
+.down-arrow{
+    position:absolute;
+    top: 105%;
+    right: 87.5%;
+    
+
+}
+
+.down i{
+    font-size: 30px;
+    color: var(--darkgray);
+    border: 2px solid darkgray;
+    border-radius: 12px 12px;
+    padding: 12px 12px;
+
+}
+
+.down i:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+    transition: all .42s ease;
+}
+/* down arror styling/sub section in main banner*/
+
+/*spacer styling*/
+.spacer {
+    height: 10px; 
+    background-color:var(--verylgreen); 
+    margin: 60px 0; 
+ }
+/*spacer styling*/
+
+/*vege venues styling*/
+.vegetables-venues {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333; /* Adjust color as needed */
+  }
+  .venue {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  .venue img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;    
+  }
+  
+  .venue h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .venue p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+/* vege venues styling */
+
+
+
+/* vege section styling*/
+
+.vegetables{
+    padding: 50px;
+    background-color: var(--white);
+    border: 15px solid lightgreen;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.center-text-2 h2{
+    color: var(--black);
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.center-text-2 span{
+    color: #ee1c47;
+}
+
+.vegeproducts{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+     gap: 2rem;
+}
+
+.row{ 
+    
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: 100%;
+    height: 80%;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+
+}
+
+.heart-icon:hover{
+    color: #ee1c47;
+}
+
+.rating{
+    color: var(--darkgreen);
+    font-size: 18px;
+}
+
+.price h4{
+    color: var(--black);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p{
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.buy-now-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--midgreen);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: var(--darkgreen);
+}
+ /* vege section styling*/
+
+
+ /* button link styling*/
+ .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: var(--midgreen);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--darkgreen);
+  }
+ /* button link styling*/
+
+
+  /* javescript header styling*/
+header.sticky{
+    background-color: var(--white);
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%)
+}
+  /* javescript header styling*/
+  
+
+  /*footer*/
+  .contact{
+    background-color: lightgray;
+
+ }
+
+ .contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap:3rem ;
+ }
+
+ .first-info img{
+    width: 140px;
+    height: auto;
+
+ }
+
+ .contact-info h4{
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+
+ .contact-info p{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+ }
+
+ .contact-info p:hover{
+    color: var(--darkgreen);
+ }
+
+ .social-icon i{
+    color: var(--darkgray);
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+
+ }
+ .social-icon i:hover{
+    transform: scale(1.3);
+
+ }
+ footer{
+    background-color:var(--verylgreen);
+    text-align: center;
+    padding: 20px;
+ }
+
+ footer p{
+    color: var(--black);
+    text-transform: capitalize;
+ }
