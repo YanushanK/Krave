@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Page</title>
+<link rel="stylesheet" href="./CSS/reset.css" type="text/CSS">
+<link rel="stylesheet" href="./CSS/style_order.css">
+
+<!--linking cdnjs-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Linking google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--Boxicons -->
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+<!--Header-->
+<section>
+
+    <header>
+        <a href="#" class="logo"><img src="Images/logo.png" alt=""></a>
+
+        <!--Nav bar/list-->
+        <ul class="nav-bar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About-Us.html">About Us</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./order.html">Order</a></li>
+            <li><a href="./loyalty.html">Loyalty</a></li>
+        </ul>
+
+        <section class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+
+
+            <section class="bx bx-menu" id="menu-icon"></section>
+            
+        </section>
+        
+    
+        
+
+    </header>
+
+    
+    </section>
+    <!--Main banner-->
+   <section class="main-home">
+    <div class="main-text">
+        <h1>Order Now!</h1>
+        <p>Your goodies are awaiting.</p>
+        
+       
+
+    </div>
+
+  <!--order page form-->
+   </section>
+   <section class="order-section">
+    <h2 class="order-title">Order Details</h2>
+    <form class="order-form" action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+   </section>
+
+   <!--order page form-->
+
+   <section class="order-section">
+    <h2>Order Form</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+                <option value="">Select Product</option>
+                <option value="1">Product 1 - $10</option>
+                <option value="2">Product 2 - $20</option>
+                <option value="3">Product 3 - $30</option>
+                <!-- Add more options dynamically if needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Add to Cart</button>
+        </div>
+    </form>
+</section>
+
+
+
+</section>
+
+</section>
+</body>
+</html>
